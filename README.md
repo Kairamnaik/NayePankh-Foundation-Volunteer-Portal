@@ -112,8 +112,8 @@ npm run dev
 Once the database has been seeded, use these accounts to explore the system:
 
 ### 1. Administrator Account
-* **Email**: `admin@nayepankh.org`
-* **Password**: `adminpassword123`
+* **Email**: `admin@gmail.com`
+* **Password**: `admin123`
 
 ### 2. Volunteer Account (Pre-approved)
 * **Email**: `volunteer@gmail.com`
