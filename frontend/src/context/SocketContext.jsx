@@ -32,7 +32,8 @@ export const SocketProvider = ({ children }) => {
       return;
     }
 
-    const socketInstance = io('http://localhost:5001', {
+    const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://nayepankh-foundation-volunteer-portal.onrender.com';
+    const socketInstance = io(backendUrl, {
       transports: ['websocket'],
     });
 

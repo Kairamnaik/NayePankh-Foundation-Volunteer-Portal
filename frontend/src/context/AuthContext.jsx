@@ -2,7 +2,8 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 
 // Configure default base URL for Axios
-axios.defaults.baseURL = 'http://localhost:5001/api';
+const backendUrl = import.meta.env.VITE_BACKEND_URL || 'https://nayepankh-foundation-volunteer-portal.onrender.com';
+axios.defaults.baseURL = `${backendUrl}/api`;
 
 const AuthContext = createContext(null);
 
