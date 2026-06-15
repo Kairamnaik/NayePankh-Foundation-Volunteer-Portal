@@ -29,7 +29,7 @@ const seedDatabase = async () => {
     // 1. Create Admin User
     const adminUser = await User.create({
       email: 'admin@gmail.org',
-      password: 'admin123', // Will be automatically hashed in pre-save middleware
+      password: 'admin@123', // Will be automatically hashed in pre-save middleware
       role: 'admin',
     });
     console.log('Admin account created (admin@gmail.com / admin123)');
