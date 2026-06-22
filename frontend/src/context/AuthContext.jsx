@@ -57,6 +57,7 @@ export const AuthProvider = ({ children }) => {
       setUser(userData);
       setAuthHeader(userData.token);
       localStorage.setItem('user_data', JSON.stringify(userData));
+      setLoading(false);
       return { success: true };
     } catch (error) {
       setLoading(false);
@@ -75,6 +76,7 @@ export const AuthProvider = ({ children }) => {
       setUser(userData);
       setAuthHeader(userData.token);
       localStorage.setItem('user_data', JSON.stringify(userData));
+      setLoading(false);
       return { success: true, user: userData };
     } catch (error) {
       setLoading(false);
